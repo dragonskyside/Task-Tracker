@@ -13,7 +13,7 @@ const Header = ({ title }) => {
     return (
         <header className='header'>
             <h1> {title} </h1>
-            <Button text='Add' color='red' onClick={onClick} />
+            <Button text='Add' color='green' onClick={onClick} />
        
         </header>
     )
