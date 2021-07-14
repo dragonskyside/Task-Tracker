@@ -3,17 +3,17 @@ import Button from './Button'
 import PropTypes from 'prop-types'
 
 
-const Header = ({ title }) => {
-
-//    Function declaration
-    const onClick = () => {
-        alert('I have been clicked')
-    }
-
+const Header = ({ title, onAdd, showAdd }) => {
+  
+  
     return (
         <header className='header'>
             <h1> {title} </h1>
-            <Button text='Add' color='green' onClick={onClick} />
+            <Button 
+            text={showAdd ? 'Close' : 'Add' } 
+            color={ showAdd ? 'green' : 'red' }
+             onClick={onAdd} 
+            />
        
         </header>
     )
